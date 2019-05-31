@@ -1,36 +1,149 @@
-/*.topStyle{
-    position:fixed;
-    width:100%;
-    z-index:1;
-    top:0
-}
-.topnavbar{
-    width:100%;
-    overflow:hidden;
-    display:inline-block;
-    width:auto
-}*/
-.parallax-home{
-    background-image: url("/res/home.jpg");
+/* Hey you, psst! Glad you're reading this. Let me Explain this
+in a nutshell. (͡ ° ͜ʖ ͡ °)
+parallax-home contains the image tag for parallax effect in Home
+intro-image used to add styles of heading for each section
+*/
+html,body{
     height: 100%;
+    padding: 0;
+    margin: 0;
+    line-height: 1.8;
+    font-family: "Lato", sans-serif;
+}
+.parallax-home{
+    background-image: url(../res/home.jpg);
+    width: auto;
+    height: 400px;
     /*create parallax Scrolling*/
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-.caption span.border {
-  background-color: #111;
-  color: #fff;
-  padding: 18px;
-  font-size: 25px;
-  letter-spacing: 10px;
-}
-.headingintro{
+.image-intro{
     position: absolute;
+    background: #222;
+    width: auto;
+    height: auto;
+    color: #fff;
+    padding: 15px;
     top: 50%;
     left: 50%;
+    letter-spacing: 10px;
+    font-size: 3vw;
     /*transform : translate(x-axis[+ve moves to right else left],y-axis[+ve moves down -ve to left])*/ 
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -150%);
     font-family: 'Concert One', cursive;
+}
+.card{
+     text-align: center;  /*holds Subheadings  */
+}
+.container{
+    color: #777;
+    background-color:white;
+    text-align:center;
+    padding:50px 80px;
+    text-align: justify;
+}
+.navbar{
+    color:inherit;
+    background-color:inherit;
+    width: 100%;
+    text-align:center;
+    cursor:pointer;
+    top: 0; /* Requried for sticky proprty to work */
+    white-space:nowrap;
+    display:block;
+    position: -webkit-sticky;  /*Safari Browser*/
+    position: sticky;
+}
+.navbar a{
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 12px 12px 12px 12px;
+    text-decoration: none;
+}
+i.material-icons{
+    padding: 12px 12px 12px 12px;
+}
+.navbar a.burger {
+    display: none;
+  }
+.navbar a:hover {
+      background-color: #d1ccc0;
+      color: black;
+  }
+  @media screen and (max-width: 600px)
+  {
+      .navbar a:not(:first-child)
+      {
+          display: none;
+        }
+        .navbar a.burger
+        {
+            float: right;
+            display: block;
+        }
+    }
+@media screen and (max-width: 600px)
+{
+    .navbar.mobile 
+    {   
+        position: relative;
+        bottom: 0px;
+        cursor: auto;
+        height: 420px;
+        color: #000;
+        padding: 0;
+        margin: 0;
+    }
+    .navbar.mobile .burger
+    {
+        position: absolute;
+        right: 0;
+        top: 0;
+        color: #000;
+    }
+    .topnav.mobile a {
+
+      float: inherit;
+      color: #000;
+      display: block;
+      text-align: left;
+    }
+}
+
+.navbar-fixed-top.scrolled {
+    background-color: rgb(24, 22, 22) !important;
+    transition: background-color 200ms linear;
+  }
+
+.divide-half{
+    -ms-flex:0 0 50%;
+    flex:0 0 50%;
+    max-width:50%;
+    position:relative;
+    width:100%;
+    padding-right:15px;
+    padding-left:15px;    
+}
+.divide-almost{
+    -ms-flex:0 0 66.666667%;
+    flex:0 0 66.666667%;
+    max-width:66.666667%;
+    position:relative;
+    width: 100%;
+    padding-right:15px;
+    padding-left:15px;
+}
+.divide-quater{
+    -ms-flex:0 0 33.333333%;
+    flex:0 0 33.333333%;
+    max-width:33.333333%;
+    position:relative;
+    width: 100%;
+    padding-right:15px;
+    padding-left:15px;
 }
