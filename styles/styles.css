@@ -20,6 +20,15 @@ html,body{
     background-repeat: no-repeat;
     background-size: cover;
 }
+.parallax-skills{
+    background-image: url(../res/skills.jpg);
+    width: auto;
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .image-intro{
     position: absolute;
     background: #222;
@@ -33,6 +42,20 @@ html,body{
     font-size: 3vw;
     /*transform : translate(x-axis[+ve moves to right else left],y-axis[+ve moves down -ve to left])*/ 
     transform: translate(-50%, -150%);
+    font-family: 'Concert One', cursive;
+}
+.image-middle{
+    position: relative;
+    width: auto;
+    color: #fff;
+    overflow: auto;
+    height: auto;
+    transform:translate(-50%,-50%);
+    padding: 15px;
+    top: 50%;
+    left: 85%;
+    letter-spacing: 10px;
+    font-size: 4vw;
     font-family: 'Concert One', cursive;
 }
 .card{
@@ -62,11 +85,11 @@ html,body{
     display: block;
     color: white;
     text-align: center;
-    padding: 12px 12px 12px 12px;
+    padding: 0px 12px 12px 8px; /* top right left bottom */
     text-decoration: none;
 }
 i.material-icons{
-    padding: 12px 12px 12px 12px;
+    padding: 12px 12px 12px 8px;
 }
 .navbar a.burger {
     display: none;
@@ -115,10 +138,29 @@ i.material-icons{
     }
 }
 
-.navbar-fixed-top.scrolled {
-    background-color: rgb(24, 22, 22) !important;
-    transition: background-color 200ms linear;
-  }
+.navbar-fixed {
+    position:sticky;
+    top: 0;
+    height: 60px;
+    animation:animatetop 0.4s;
+    color:#fff;
+    background-color:#000;
+}
+    @keyframes 
+    animatetop
+    {
+        from
+        {
+            top:-300px;
+            opacity:0
+        }
+         to
+         {
+             top:0;
+             opacity:1
+            }
+        }
+  
 
 .divide-half{
     -ms-flex:0 0 50%;
