@@ -1,7 +1,30 @@
 /* Hey you, psst! Glad you're reading this. Let me Explain this
 in a nutshell. (͡ ° ͜ʖ ͡ °)
-parallax-home contains the image tag for parallax effect in Home
-intro-image used to add styles of heading for each section
+
+## parallax-home for adding image for Home cover
+## parallax-skills for adding image to portfolio cover
+## parallax-contact for adding image to contact cover
+
+## image-intro for my name in home cover
+## image-middle for text in portfolio cover
+## image-end for text in contact cover
+
+## card for giving us card view
+## container for putting contents
+
+## navbar for navigation purposes
+## navbar a for anchor elements of nav bar
+## navbar a:hover for styling when hovering mouse over the navbar elements
+## navbar a.burger for styling the burger icon of navbar
+## navbar-fixed to change the background color of navbar after scrolling from home's cover image
+
+## row for creating a row division
+## divide-almost for divides the given row by 2/3 division
+## divide-quater for divides the given row by 1/3 division
+## divide-half for dividing rows into two equal halves 1/2
+
+## skill-container for container for skill bar
+## skill-html,android,linux for each  independent skills 
 */
 html,body{
     height: 100%;
@@ -29,12 +52,22 @@ html,body{
     background-repeat: no-repeat;
     background-size: cover;
 }
+.parallax-contact{
+    background-image: url(../res/contact.jpg);
+    width: auto;
+    height: 600px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .image-intro{
     position: absolute;
     background: #222;
     width: auto;
     height: auto;
     color: #fff;
+    /* mix-blend-mode: multiply; */
     padding: 15px;
     top: 50%;
     left: 50%;
@@ -46,16 +79,30 @@ html,body{
 }
 .image-middle{
     position: relative;
-    width: auto;
+    width: fit-content;
     color: #fff;
-    overflow: auto;
+    overflow: hidden;
     height: auto;
     transform:translate(-50%,-50%);
     padding: 15px;
     top: 50%;
-    left: 85%;
+    left: 50%;
     letter-spacing: 10px;
     font-size: 4vw;
+    font-family: 'Concert One', cursive;
+}
+.image-end{
+    position: relative;
+    width: fit-content;
+    color: #fff;
+    overflow: hidden;
+    height: auto;
+    transform: translate(-50%,-50%);
+    padding: 15px;
+    top: 50%;
+    left: 50%;
+    letter-spacing: 10px;
+    font-size: 5vw;
     font-family: 'Concert One', cursive;
 }
 .card{
@@ -65,7 +112,7 @@ html,body{
     color: #777;
     background-color:white;
     text-align:center;
-    padding:50px 80px;
+    padding:30px 50px;
     text-align: justify;
 }
 .navbar{
@@ -87,9 +134,6 @@ html,body{
     text-align: center;
     padding: 0px 12px 12px 8px; /* top right left bottom */
     text-decoration: none;
-}
-i.material-icons{
-    padding: 12px 12px 12px 8px;
 }
 .navbar a.burger {
     display: none;
@@ -161,31 +205,100 @@ i.material-icons{
             }
         }
   
+        .imgcontainer {
+            text-align: center;
+            overflow: hidden;
+          }
+          
+          img.avatar {
+            width: 60%;
+            border-radius: 50%;
+          }
+          .row{
+          display:-ms-flexbox;
+          display:flex;
+          -ms-flex-wrap:wrap;
+          flex-wrap:wrap;
+          margin-right:-15px;
+          margin-left:-15px;
+          }
 
-.divide-half{
-    -ms-flex:0 0 50%;
-    flex:0 0 50%;
-    max-width:50%;
-    position:relative;
-    width:100%;
-    padding-right:15px;
-    padding-left:15px;    
-}
 .divide-almost{
     -ms-flex:0 0 66.666667%;
     flex:0 0 66.666667%;
     max-width:66.666667%;
-    position:relative;
-    width: 100%;
-    padding-right:15px;
-    padding-left:15px;
 }
 .divide-quater{
     -ms-flex:0 0 33.333333%;
     flex:0 0 33.333333%;
     max-width:33.333333%;
-    position:relative;
+}
+.divide-half{
+    -ms-flex:0 0 50%;
+    flex:0 0 50%;
+    max-width:50%;
+}
+.divide-four{
+    -ms-flex:0 0 33.333333%;
+    flex:0 0 33.333333%;
+    max-width:33.333333%
+}
+.skill-container{
     width: 100%;
-    padding-right:15px;
-    padding-left:15px;
+    background-color: #ddd;
+    text-align: right;
+    padding: 2px;
+    color: white;
+}
+.skill-web{
+    width: 74%;
+    background-color: orangered;
+}
+.skill-android{
+    width: 80%;
+    background: green;
+}
+.skill-linux{
+    width: 60%;
+    background-color: #2196F3;
+}
+.inputStyle{
+    padding:18px;
+    display:block;
+    border: 1px;
+    border-bottom:1px solid #ccc;
+    width:100%;
+}
+.buttonStyle{
+    border:none;
+    margin: 16px;
+    display:inline-block;
+    padding:8px 16px;
+    vertical-align:middle;
+    overflow:hidden;
+    font-weight: bold;
+    background-color: #000;
+    color: #fff;
+    text-decoration:none;
+    color:inherit;
+    background-color:inherit;
+    text-align:center;
+    cursor:pointer;
+    white-space:nowrap;
+}
+.buttonStyle:hover{
+    color:#000!important;
+    background-color:#ccc!important;
+}
+.social{
+    opacity:0.60;
+    padding: 10px;
+    color:#fff!important;
+    background-color:#000!important;
+    padding-top:64px!important;
+    padding-bottom:64px!important;
+    text-align: center;
+}
+.social:hover{
+    opacity:1;
 }
