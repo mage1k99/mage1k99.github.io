@@ -369,7 +369,9 @@ img.avatar {
 .social:hover {
     opacity: 1;
 }
-
+.fa-github-alt,.fa-github,.fa-paper-plane,.fa-pinterest,.fa-linkedin,.fa-twitter{
+    font-size: 24px;
+}
 .fa-github-alt:hover {
     color: #DB3B21 !important;
 }
@@ -380,4 +382,10 @@ img.avatar {
 
 .fa-pinterest:hover {
     color: #E60023 !important;
+}
+.fa-linkedin:hover{
+    color: #0077B5!important;
+}
+.fa-twitter:hover{
+    color: #1DA1F2!important;
 }
