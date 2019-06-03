@@ -26,14 +26,16 @@ in a nutshell. (͡ ° ͜ʖ ͡ °)
 ## skill-container for container for skill bar
 ## skill-html,android,linux for each  independent skills 
 */
-html,body{
+html,
+body {
     height: 100%;
     padding: 0;
     margin: 0;
     line-height: 1.8;
     font-family: "Lato", sans-serif;
 }
-.parallax-home{
+
+.parallax-home {
     background-image: url(../res/home.jpg);
     width: auto;
     height: 400px;
@@ -43,7 +45,8 @@ html,body{
     background-repeat: no-repeat;
     background-size: cover;
 }
-.parallax-skills{
+
+.parallax-skills {
     background-image: url(../res/skills.jpg);
     width: auto;
     height: 500px;
@@ -52,7 +55,8 @@ html,body{
     background-repeat: no-repeat;
     background-size: cover;
 }
-.parallax-contact{
+
+.parallax-contact {
     background-image: url(../res/contact.jpg);
     width: auto;
     height: 600px;
@@ -61,7 +65,8 @@ html,body{
     background-repeat: no-repeat;
     background-size: cover;
 }
-.image-intro{
+
+.image-intro {
     position: absolute;
     background: #222;
     width: auto;
@@ -73,17 +78,18 @@ html,body{
     left: 50%;
     letter-spacing: 10px;
     font-size: 3vw;
-    /*transform : translate(x-axis[+ve moves to right else left],y-axis[+ve moves down -ve to left])*/ 
+    /*transform : translate(x-axis[+ve moves to right else left],y-axis[+ve moves down -ve to left])*/
     transform: translate(-50%, -150%);
     font-family: 'Concert One', cursive;
 }
-.image-middle{
+
+.image-middle {
     position: relative;
     width: fit-content;
     color: #fff;
     overflow: hidden;
     height: auto;
-    transform:translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     padding: 15px;
     top: 50%;
     left: 50%;
@@ -91,13 +97,14 @@ html,body{
     font-size: 4vw;
     font-family: 'Concert One', cursive;
 }
-.image-end{
+
+.image-end {
     position: relative;
     width: fit-content;
     color: #fff;
     overflow: hidden;
     height: auto;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     padding: 15px;
     top: 50%;
     left: 50%;
@@ -105,200 +112,272 @@ html,body{
     font-size: 5vw;
     font-family: 'Concert One', cursive;
 }
-.card{
-     text-align: center;  /*holds Subheadings  */
+
+.card {
+    text-align: center;
+    /*holds Subheadings  */
 }
-.container{
+
+.container {
     color: #777;
-    background-color:white;
-    text-align:center;
-    padding:30px 50px;
+    background-color: white;
+    text-align: center;
+    padding: 30px 50px;
     text-align: justify;
 }
-.navbar{
-    color:inherit;
-    background-color:inherit;
+
+.fa-home,
+.fa-user,
+.fa-table,
+.fa-envelope-square,
+.fa-align-justify {
+    padding: 8px 12px 12px 8px;
+}
+
+.navbar {
+    color: inherit;
+    background-color: inherit;
     width: 100%;
-    text-align:center;
-    cursor:pointer;
-    top: 0; /* Requried for sticky proprty to work */
-    white-space:nowrap;
-    display:block;
-    position: -webkit-sticky;  /*Safari Browser*/
+    text-align: center;
+    cursor: pointer;
+    top: 0;
+    /* Requried for sticky proprty to work */
+    white-space: nowrap;
+    display: block;
+    position: -webkit-sticky;
+    /*Safari Browser*/
     position: sticky;
 }
-.navbar a{
+
+.navbar a {
     float: left;
     display: block;
     color: white;
     text-align: center;
-    padding: 0px 12px 12px 8px; /* top right left bottom */
+    padding: 0px 12px 12px 8px;
+    /* top right left bottom */
     text-decoration: none;
 }
+
 .navbar a.burger {
     display: none;
-  }
+}
+
 .navbar a:hover {
-      background-color: #d1ccc0;
-      color: black;
-  }
-  @media screen and (max-width: 600px)
-  {
-      .navbar a:not(:first-child)
-      {
-          display: none;
-        }
-        .navbar a.burger
-        {
-            float: right;
-            display: block;
-        }
+    background-color: #d1ccc0;
+    color: black;
+}
+
+@media screen and (max-width: 600px) {
+    .navbar a:not(:first-child) {
+        display: none;
     }
-@media screen and (max-width: 600px)
-{
-    .navbar.mobile 
-    {   
+
+    .navbar a.burger {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .navbar.mobile {
         position: relative;
-        bottom: 0px;
-        cursor: auto;
-        height: 420px;
+        height: auto;
         color: #000;
         padding: 0;
         margin: 0;
     }
-    .navbar.mobile .burger
-    {
+
+    .navbar.mobile .burger {
         position: absolute;
         right: 0;
         top: 0;
         color: #000;
     }
-    .topnav.mobile a {
 
-      float: inherit;
-      color: #000;
-      display: block;
-      text-align: left;
+    .navbar.mobile a {
+
+        float: none;
+        color: #000;
+        display: block!important;
+        text-align: left;
     }
+
+    .parallax-home,
+    .parallax-contact,
+    .parallax-skills {
+        background-attachment: scroll;
+        min-height: 400px;
+    }
+
+    .row {
+        position: relative;
+        display: block !important;
+        width: 100%;
+    }
+
+    .divide-almost {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        align-self: auto;
+        text-align: center;
+    }
+
+    .divide-quater {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 60%;
+        align-self: auto;
+        text-align: center;
+    }
+    .imgcontainer {
+        text-align: center;
+        overflow: hidden;
+        width: inherit;
+    }
+    img.avatar {
+        width: 100%;
+        border-radius: 50%;
+    }
+
 }
 
 .navbar-fixed {
-    position:sticky;
+    position: sticky;
     top: 0;
     height: 60px;
-    animation:animatetop 0.4s;
-    color:#fff;
-    background-color:#000;
+    animation: animatetop 0.4s;
+    color: #fff;
+    background-color: #000;
 }
-    @keyframes 
-    animatetop
-    {
-        from
-        {
-            top:-300px;
-            opacity:0
-        }
-         to
-         {
-             top:0;
-             opacity:1
-            }
-        }
-  
-        .imgcontainer {
-            text-align: center;
-            overflow: hidden;
-          }
-          
-          img.avatar {
-            width: 60%;
-            border-radius: 50%;
-          }
-          .row{
-          display:-ms-flexbox;
-          display:flex;
-          -ms-flex-wrap:wrap;
-          flex-wrap:wrap;
-          margin-right:-15px;
-          margin-left:-15px;
-          }
 
-.divide-almost{
-    -ms-flex:0 0 66.666667%;
-    flex:0 0 66.666667%;
-    max-width:66.666667%;
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
 }
-.divide-quater{
-    -ms-flex:0 0 33.333333%;
-    flex:0 0 33.333333%;
-    max-width:33.333333%;
+
+.imgcontainer {
+    text-align: center;
+    overflow: hidden;
 }
-.divide-half{
-    -ms-flex:0 0 50%;
-    flex:0 0 50%;
-    max-width:50%;
+
+img.avatar {
+    width: 60%;
+    border-radius: 50%;
 }
-.divide-four{
-    -ms-flex:0 0 33.333333%;
-    flex:0 0 33.333333%;
-    max-width:33.333333%
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
 }
-.skill-container{
+
+.divide-almost {
+    -ms-flex: 0 0 66.666667%;
+    flex: 0 0 66.666667%;
+    max-width: initial;
+    align-self: auto;
+    text-align: center;
+    margin-left: -15px;
+}
+
+.divide-quater {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    align-self: auto;
+    text-align: center;
+}
+
+.skill-container {
     width: 100%;
     background-color: #ddd;
     text-align: right;
     padding: 2px;
     color: white;
 }
-.skill-web{
+
+.skill-web {
     width: 74%;
     background-color: orangered;
 }
-.skill-android{
+
+.skill-android {
     width: 80%;
     background: green;
 }
-.skill-linux{
+
+.skill-linux {
     width: 60%;
     background-color: #2196F3;
 }
-.inputStyle{
-    padding:18px;
-    display:block;
+
+.inputStyle {
+    padding: 18px;
+    display: block;
     border: 1px;
-    border-bottom:1px solid #ccc;
-    width:100%;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
 }
-.buttonStyle{
-    border:none;
+
+.fa-phone,
+.fa-location-arrow,
+.fa-envelope {
+    font-size: 3vw;
+    margin: 5%;
+}
+
+.buttonStyle {
+    border: none;
     margin: 16px;
-    display:inline-block;
-    padding:8px 16px;
-    vertical-align:middle;
-    overflow:hidden;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
     font-weight: bold;
     background-color: #000;
     color: #fff;
-    text-decoration:none;
-    color:inherit;
-    background-color:inherit;
-    text-align:center;
-    cursor:pointer;
-    white-space:nowrap;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
 }
-.buttonStyle:hover{
-    color:#000!important;
-    background-color:#ccc!important;
+
+.buttonStyle:hover {
+    color: #000 !important;
+    background-color: #ccc !important;
 }
-.social{
-    opacity:0.60;
+
+.social {
+    opacity: 0.60;
     padding: 10px;
-    color:#fff!important;
-    background-color:#000!important;
-    padding-top:64px!important;
-    padding-bottom:64px!important;
+    color: #fff !important;
+    background-color: #000 !important;
+    padding-top: 64px !important;
+    padding-bottom: 64px !important;
     text-align: center;
 }
-.social:hover{
-    opacity:1;
+
+.social:hover {
+    opacity: 1;
+}
+
+.fa-github-alt:hover {
+    color: #DB3B21 !important;
+}
+
+.fa-paper-plane:hover {
+    color: #34ABE0 !important;
+}
+
+.fa-pinterest:hover {
+    color: #E60023 !important;
 }
