@@ -33,6 +33,7 @@ body {
     margin: 0;
     line-height: 1.8;
     font-family: "Lato", sans-serif;
+	scroll-behavior: smooth;
 }
 
 .parallax-home {
