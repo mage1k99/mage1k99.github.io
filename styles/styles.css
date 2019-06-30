@@ -87,6 +87,7 @@ body {
 .image-middle {
     position: relative;
     width: fit-content;
+    width: -moz-fit-content; /* For mozilla firefox */
     color: #fff;
     overflow: hidden;
     height: auto;
@@ -102,6 +103,7 @@ body {
 .image-end {
     position: relative;
     width: fit-content;
+    width: -moz-fit-content;
     color: #fff;
     overflow: hidden;
     height: auto;
