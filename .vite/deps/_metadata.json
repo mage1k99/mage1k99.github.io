@@ -1,0 +1,19 @@
+{
+  "hash": "e566ba0c",
+  "browserHash": "a98730f1",
+  "optimized": {
+    "vue": {
+      "src": "../../node_modules/.pnpm/vue@3.2.45/node_modules/vue/dist/vue.runtime.esm-bundler.js",
+      "file": "vue.js",
+      "fileHash": "514bb32c",
+      "needsInterop": false
+    },
+    "ofetch": {
+      "src": "../../node_modules/.pnpm/ofetch@1.0.0/node_modules/ofetch/dist/index.mjs",
+      "file": "ofetch.js",
+      "fileHash": "cbbe20a0",
+      "needsInterop": false
+    }
+  },
+  "chunks": {}
+}
