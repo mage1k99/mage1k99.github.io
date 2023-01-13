@@ -4,6 +4,7 @@ const builtAt = new Date().toISOString();
 
 export default defineNuxtConfig({
   nitro: {
+    preset: "netlify",
     compressPublicAssets: {
       gzip: true,
       brotli: true,
