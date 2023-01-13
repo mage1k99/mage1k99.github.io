@@ -33,8 +33,15 @@ const toggleDark = useToggle(isDark);
           aria-label="Toggle Menu"
           @click="isNavbarOpen = !isNavbarOpen"
         >
-          <div class="i-mdi-menu"></div>
+          <div class="i-mdi-menu text-black dark:text-white"></div>
         </button>
+        <a href="#" class="navbar__link px-2" @click.prevent="toggleDark()">
+          <div
+            class="i-mdi-weather-night inline-block"
+            v-if="isDark == true"
+          ></div>
+          <div class="i-mdi-weather-sunny inline-block" v-else></div>
+        </a>
       </div>
     </div>
     <div class="navbar__menu">
@@ -48,12 +55,7 @@ const toggleDark = useToggle(isDark);
         <li class="navbar__item">
           <nuxt-link to="/contact" class="navbar__link">Reach me!</nuxt-link>
         </li>
-        <li class="navbar__item">
-          <a href="#" class="navbar__link | p-0!" @click.prevent="toggleDark()">
-            <div class="i-mdi-weather-night" v-if="isDark == true"></div>
-            <div class="i-mdi-weather-sunny" v-else></div>
-          </a>
-        </li>
+        <li class="navbar__item"></li>
       </ul>
     </div>
   </nav>
