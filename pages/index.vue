@@ -13,7 +13,7 @@ useHead({
         <h1 class="text-center">Hey There 👋</h1>
         <p>
           I am MageshBabu, a Software Developer working in
-          <a href="https://fossfreks.in">FossFreaks</a>
+          <a href="https://fossfreaks.com">FossFreaks</a>
         </p>
         <p>
           I work on different kinds of projects and various tech stack. Created
