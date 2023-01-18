@@ -55,7 +55,7 @@ export default defineNuxtConfig({
           hid: "description",
           name: "description",
           content:
-            "Developer with experince in working in full stack applications and deploying them. also has experince in creating mobile applications",
+            "Developer with experience in working in full stack applications and deploying them. also has experience in creating mobile applications",
         },
         { name: "msapplication-TileColor", content: "#603cba" },
         { name: "theme-color", content: "#ffffff" },
@@ -68,7 +68,7 @@ export default defineNuxtConfig({
         {
           property: "twitter:description",
           content:
-            "Developer with experince in working in full stack applications and deploying them. also has experince in creating mobile applications",
+            "Developer with experience in working in full stack applications and deploying them. also has experience in creating mobile applications",
         },
         {
           property: "twitter:image",
@@ -81,7 +81,7 @@ export default defineNuxtConfig({
         {
           property: "og:description",
           content:
-            "Developer with experince in working in full stack applications and deploying them. also has experince in creating mobile applications",
+            "Developer with experience in working in full stack applications and deploying them. also has experience in creating mobile applications",
         },
         {
           property: "og:image",

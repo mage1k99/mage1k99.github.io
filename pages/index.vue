@@ -13,7 +13,7 @@ useHead({
         <h1 class="text-center">Hey There 👋</h1>
         <p>
           I am MageshBabu, a Software Developer working at
-          <a href="https://fossfreaks.com">FossFreaks</a>
+          <a href="https://fossfreaks.com">FossFreaks.</a>
         </p>
         <p>
           I work on different kinds of projects and various tech stacks. Created
@@ -24,7 +24,7 @@ useHead({
         <p>
           Also planning to create a blog with this site. I will be updating this
           site. You can always say hello by using one of
-          <nuxt-link to="contact">these</nuxt-link>
+          <nuxt-link to="contact">these.</nuxt-link>
         </p>
         <p>
           Apart from programming, I also enjoy listening to music, Spending time

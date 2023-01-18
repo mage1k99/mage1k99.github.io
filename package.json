@@ -15,8 +15,7 @@
     "inquirer": "9.1.4",
     "normalize.css": "^8.0.1",
     "nuxt": "^3.0.0",
-    "unplugin-icons": "^0.14.15",
-    "vue-gtag-next": "^1.14.0"
+    "unplugin-icons": "^0.14.15"
   },
   "dependencies": {
     "@iconify-json/mdi": "^1.1.41",
