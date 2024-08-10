@@ -53,6 +53,11 @@ const toggleDark = useToggle(isDark);
           <nuxt-link to="/" class="navbar__link">About</nuxt-link>
         </li>
         <li class="navbar__item">
+          <nuxt-link to="/work-experience" class="navbar__link"
+            >Work Experience</nuxt-link
+          >
+        </li>
+        <li class="navbar__item">
           <nuxt-link to="/contact" class="navbar__link">Reach me!</nuxt-link>
         </li>
         <li class="navbar__item"></li>
