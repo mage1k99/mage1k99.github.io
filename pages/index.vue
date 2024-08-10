@@ -18,8 +18,8 @@ useHead({
         <p>
           I work on different kinds of projects and various tech stacks. Created
           projects, most of them are private for now. New projects are yet to
-          come. I choose a simple yet aesthetic design, that's the reason for
-          this design.
+          come to life soon. I chose a simple yet visually appealing design as
+          it suits my preference.
         </p>
         <p>
           Also planning to create a blog with this site. I will be updating this
@@ -28,7 +28,7 @@ useHead({
         </p>
         <p>
           Apart from programming, I also enjoy listening to music, watching
-          anime, movies and series. currently my hobby is to gardening
+          anime, movies and series. currently my hobby is to gardening 🪴
         </p>
         <p>
           You can see my professional work experience
