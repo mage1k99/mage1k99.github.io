@@ -1,4 +1,6 @@
-import projects from "./data/projects";
+import { useProjectsStore } from "./data/projects";
+import { useWorkExperienceStore } from "./data/experience";
 export const state = () => ({
-  projects,
+  useProjectsStore,
+  useWorkExperienceStore,
 });

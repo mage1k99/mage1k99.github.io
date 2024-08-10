@@ -10,7 +10,7 @@ export const useProjectsStore = defineStore("projects", {
           "A Script to remove the bloatware installed in Xiaomi Devices without root permission.",
         technologies: ["Shell"],
         github_url: "https://github.com/mage1k99/DebloatMi",
-        opensource: true,
+        isOpenSource: true,
       },
       {
         image: "/images/projects/debloat.jpeg",
@@ -18,7 +18,7 @@ export const useProjectsStore = defineStore("projects", {
         description:
           "A Script to remove the bloatware installed in Xiaomi Devices without root permission.",
         technologies: ["Shell"],
-        opensource: false,
+        isOpenSource: false,
       },
     ],
   }),
