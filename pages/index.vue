@@ -12,8 +12,8 @@ useHead({
       <div class="prose">
         <h1 class="text-center">Hey There 👋</h1>
         <p>
-          I am MageshBabu, a Software Developer working at
-          <a href="https://fossfreaks.com">FossFreaks.</a>
+          I am MageshBabu, a Software Engineer working at
+          <a href="https://memorres.com">Memorres Digital.</a>
         </p>
         <p>
           I work on different kinds of projects and various tech stacks. Created
@@ -27,11 +27,12 @@ useHead({
           <nuxt-link to="contact">these.</nuxt-link>
         </p>
         <p>
-          Apart from programming, I also enjoy listening to music, Spending time
-          with Loved ones and my pets. I'm a person who seeks a bit of privacy,
-          which is why I'm not sharing all my details here. You can contact me
-          via my handles. Thank you for Spending time reading this, Have a nice
-          day.
+          Apart from programming, I also enjoy listening to music, watching
+          anime, movies and series. currently my hobby is to gardening
+        </p>
+        <p>
+          You can see my professional work experience
+          <nuxt-link to="work-experience">here</nuxt-link>
         </p>
         <hr />
       </div>
