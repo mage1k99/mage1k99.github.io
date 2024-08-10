@@ -22,5 +22,8 @@
     "@nuxt/kit": "^3.0.0",
     "@pinia/nuxt": "^0.4.6",
     "pinia": "^2.0.28"
+  },
+  "overrides": {
+    "vue": "latest"
   }
 }
