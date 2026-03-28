@@ -14,7 +14,7 @@
     "@vueuse/core": "^9.10.0",
     "inquirer": "9.1.4",
     "normalize.css": "^8.0.1",
-    "nuxt": "^3.0.0",
+    "nuxt": "^3.16.0",
     "unplugin-icons": "^0.14.15"
   },
   "dependencies": {
